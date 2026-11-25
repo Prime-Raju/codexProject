@@ -6,10 +6,10 @@
 		<div class="container site-footer__cta-inner">
 			<div class="site-footer__cta-copy">
 				<p class="section-kicker"><?php esc_html_e( 'Have a good idea?', 'raju-theme' ); ?></p>
-				<h2 id="footer-cta-title"><?php esc_html_e( 'Let’s make something memorable.', 'raju-theme' ); ?></h2>
-				<p><?php esc_html_e( 'Tell us what you’re imagining. This could be the start of something great.', 'raju-theme' ); ?></p>
+				<h2 id="footer-cta-title"><?php esc_html_e( 'Let us make something memorable.', 'raju-theme' ); ?></h2>
+				<p><?php esc_html_e( 'Tell us what you are imagining. This could be the start of something great.', 'raju-theme' ); ?></p>
 			</div>
-			<a class="button button--primary site-footer__cta-button" href="<?php echo esc_url( raju_theme_page_url( 'contact-us', home_url( '/#contact-us' ) ) ); ?>"><?php esc_html_e( 'Start a conversation', 'raju-theme' ); ?><span aria-hidden="true">↗</span></a>
+			<a class="button button--primary site-footer__cta-button" href="<?php echo esc_url( raju_theme_page_url( 'contact-us', home_url( '/#contact-us' ) ) ); ?>"><?php esc_html_e( 'Start a conversation', 'raju-theme' ); ?><span aria-hidden="true">&#8599;</span></a>
 			<span class="site-footer__cta-orb" aria-hidden="true"></span>
 		</div>
 	</section>
@@ -45,7 +45,7 @@
 	<div class="container site-footer__bottom">
 		<p class="site-footer__copyright">&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'All rights reserved.', 'raju-theme' ); ?></p>
 		<p class="site-footer__note"><?php esc_html_e( 'Made with curiosity and care.', 'raju-theme' ); ?></p>
-		<a class="site-footer__top-link" href="#top"><?php esc_html_e( 'Back to top', 'raju-theme' ); ?> <span aria-hidden="true">↑</span></a>
+		<a class="site-footer__top-link" href="#top"><?php esc_html_e( 'Back to top', 'raju-theme' ); ?> <span aria-hidden="true">&#8593;</span></a>
 	</div>
 </footer>
 <?php wp_footer(); ?>

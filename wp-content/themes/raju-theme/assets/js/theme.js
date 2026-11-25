@@ -3,6 +3,19 @@
 	'use strict';
 
 	document.documentElement.classList.add('has-js');
+	var pageLoader = document.querySelector('.site-loader');
+	if (pageLoader) {
+		document.documentElement.classList.add('is-loading');
+		var hidePageLoader = function () {
+			document.documentElement.classList.remove('is-loading');
+			document.documentElement.classList.add('has-loaded');
+		};
+		if (document.readyState === 'complete') {
+			hidePageLoader();
+		} else {
+			window.addEventListener('load', hidePageLoader, { once: true });
+		}
+	}
 
 	var menuButton = document.querySelector('.menu-toggle');
 	var navigation = document.querySelector('.primary-navigation');

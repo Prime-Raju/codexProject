@@ -9,6 +9,10 @@
 </head>
 <body id="top" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<div class="site-loader" role="status" aria-live="polite" aria-label="<?php esc_attr_e( 'Loading page', 'raju-theme' ); ?>">
+	<span class="site-loader__spinner" aria-hidden="true"></span>
+	<span class="site-loader__text"><?php esc_html_e( 'Loading', 'raju-theme' ); ?></span>
+</div>
 <a class="skip-link" href="#primary"><?php esc_html_e( 'Skip to content', 'raju-theme' ); ?></a>
 <header class="site-header">
 	<div class="site-header__meta">
